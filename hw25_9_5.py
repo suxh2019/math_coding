@@ -1,119 +1,73 @@
-# -*- coding: utf-8 -*-
+
 """
-Created on Mon Jun 30 10:55:33 2025
+9/5/2025
+Homework: addition, multiplciation, subtraction, division,power
 
 @author: xihong
 """
 
-# Calculate the factorial of n
-def factorial(n):
-    # Base case
-    if n == 0 or n == 1:
-        return 1
-    # recursive step
-    else:
-        return n * factorial(n - 1)
-    
-""" define a function"""
-# f =(c *9/5) + 32  
-def c_to_f(c):
-  """Converts temperature from Celsius to Fahrenheit."""
-  f = (c * 9/5) + 32
-  return f
 
-# call the function
-c = 37.7777
-temp = c_to_f(c)
-print("temperature in fahrenheit is : ", temp)
-
-# c= (f-32)*5/9
-#define a function
-def f_to_c(f):
-  
-  c=(f -32)*5/9
-  return c
-
-# call the function
-f = 100
-temp = f_to_c(f)
-print("temperature in Celsius is : ", temp)
-
-  
-  
-
-
-
-
-
-
-
-
-
-# mul =1
-# for t in range(1,3):
-#     print("testing")
-#     print("testing")
-    
-# print("testing")
-
-
-
-
-
-
-# Call a function given a temperature 40 Celsius
-temp = c_to_f(40)
-#Temp will return the temperature in unit fahrenheit
-#print("temperature in Fahrenheit is:", temp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def fahrenheit_to_celsius(fahrenheit):
-  """Converts temperature from Fahrenheit to Celsius."""
-  celsius = (fahrenheit - 32) * 5/9
-  return celsius
- 
+# addition of two numbers
 def addition(num1, num2):
-    return num1 + num2
+    result = num1 + num2
+    return result
 
-#practice: write code to get the sume of given three numbers
+'''
+Write code to do the subtraction
+result = num1 - num2
+'''
+def subtraction(num1, num2):
     
-    
-    
-# The main function in Python is a convention used by programmers to define the starting point of a script. 
-# def main():
-#     num = 3
-    
-#     factorial_result =  factorial(num)
-    
-#     print("----------------------\n")
-#     print("The factorial of", num, "is", factorial_result)
-    
-#     # print("Please enter two temperature in celsius")
-#     # temp = float(input("Enter first number: "))
-    
-    
-#     # print("Please enter two numbers for addtion")
-#     # num1 = float(input("Enter first number: "))
-#     # num2 = float(input("Enter second number: "))
-#     # #sum = num1 + num2
-#     # print("The sum of", num1, "and", num2, "is", addition(num1,num2))
+    return 0 # 0 needs to be replaced with by other variable, something like result in addition
 
-# if __name__ == "__main__":
-#     main()
+
+'''
+Write a code to do the multiplication
+result = num1 *  num2, similar to addition and subtraction
+function name is multiplication
+'''
+
+
+
+
+'''
+Write a code to do the division
+result = num1 /  num2, similar to addition and subtraction
+function name is division
+'''
+
+
+
+'''
+Write a code to do the addtion of three numbers
+result = num1 + num2 + num1, 
+'''
+def addition_three_numbers(num1,num2,num3):
+    result = num1 + num2 + num3
+    return result
+
+
+
+
+a = 20
+b = 5
+c =25
+
+sum = addition(a,b)
+print("a + b = ", sum)
+
+minus = subtraction(a,b)
+print("a - b = ", minus) 
+
+'''
+multip = multiplication(a,b)
+print(" a * b = ", multip)
+
+div= division(a,b)
+print(" a / b = ", div)
+
+'''
+
+sum_three_number = addition_three_numbers(a, b, b)
+print("a + b + c = ", sum_three_number)
+
