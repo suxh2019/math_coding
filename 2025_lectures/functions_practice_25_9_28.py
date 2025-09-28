@@ -19,6 +19,7 @@ the condition in the if statement is True, the block of code under if is execute
 
 '''
 
+print("-------The biggning of What we learn on 2025.09.28----")
 a = 4
 b =7
 
@@ -61,12 +62,33 @@ hint: use if-else statement
 '''
 def compare_three_numbers(num1,num2,num3):
     
+    # save the biggest value among three numbers
     biggest_value = 0
+    # save the bigger value among two numbers
+    bigger_value = 0
     
-    
-
+    if num1 > num2:
+        bigger_value = num1
+    else:
+        bigger_value = num2
+        
+    if bigger_value > num3:
+        biggest_value =bigger_value
+    else:
+        biggest_value = num3
     
     return biggest_value
+
+num1 = 10
+num2 = 50
+num3 = 5
+
+big_value = compare_three_numbers(num1,num2,num3)
+print("The biggest value is ", big_value)
+print("-------The end of What we learn on 2025.09.28----")
+print()
+print()
+
 
 
 '''
