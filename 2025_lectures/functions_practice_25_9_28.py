@@ -95,12 +95,6 @@ function name: power
 '''
 
 
-'''
-write a function to return the absolute value of x.
-function name: absolute
-
-'''
-
 
 
 
@@ -131,13 +125,11 @@ list_num = [1,2,3,4,5,6,7]
 power_value = power(base, exponent)
 min_value = find_min(list)
 max_value = find_max(list)
-abs_value = absolute(x)
 
 
 print(base,"to the power ", exponent, "is", power_value)
 print("The minimal value in ",list_num,"is", min_value)
 print("The maximal value in ",list_num,"is", max_value)
-print("The absolute value of ", x, "is", abs_value)
 
 '''
 
