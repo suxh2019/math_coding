@@ -27,7 +27,7 @@ function name: find_min
 
 
 '''
-Write the code to find the minimum value of a list
+Write the code to find the maximum value of a list
 function name: find_max
 ''' 
 
