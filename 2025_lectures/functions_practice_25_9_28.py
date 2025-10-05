@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Sep 28 14:26:49 2025
-
+Edited on 10/5/2025
 
 @author: xihong
 """
 
-#---------part 1---------------------
+
 '''
 The syntax for if-else
 
@@ -18,8 +18,7 @@ the condition in the if statement is True, the block of code under if is execute
  otherwise, the block under else is executed.
 
 '''
-
-print("-------The biggning of What we learn on 2025.09.28----")
+print("-------------------------")
 a = 4
 b =7
 
@@ -28,7 +27,7 @@ if a > b :
 else:
     print("b is bigger")
     
-    
+print("---------------")   
 # return the bigger number from two different numbers
 # print which number is bigger
 def return_bigger_number(num1,num2):
@@ -36,11 +35,10 @@ def return_bigger_number(num1,num2):
     bigger_number = 0
     
     if num1 > num2 :
-        print("num1 is bigger")
+       
         bigger_number = num1
         
     else:
-        print("num2 is bigger")
         bigger_number = num2
         
     return bigger_number
@@ -50,7 +48,7 @@ num1 = 100
 num2 = 10
 
 bigger_value = return_bigger_number(num1,num2)
-print("The bigger value between", num1,"and", num2,"is",bigger_value)
+#print("The bigger value between", num1,"and", num2,"is",bigger_value)
 
 
 
@@ -79,79 +77,42 @@ def compare_three_numbers(num1,num2,num3):
     
     return biggest_value
 
+
 num1 = 10
 num2 = 50
 num3 = 5
 
 big_value = compare_three_numbers(num1,num2,num3)
 print("The biggest value is ", big_value)
-print("-------The end of What we learn on 2025.09.28----")
+
 print()
 print()
 
 
-
-'''
-#---------------part 2---------------
-
-# How to read and save each element from a list
-
-list_nums = [1,3,6,7,8]
-
-for element in list_nums:
-    print(element) # print each element in the list
+# Use the for loop to find the maximum value from the list
+def compare_list(list):
     
-    a = element # save the element value to the variable a 
-    print("Now the value a is ", a)
-'''
+    # save the biggest value among three numbers
+    biggest_value = -1000
+    
+    for element in list:
+        if element > biggest_value:
+            biggest_value = element
+    
+    return biggest_value
 
-
-
-#---------------------Part 3---------------------------
-
-'''
-Write a function to perform  power operation
-result = base ** exponent
-function name: power
-
-'''
-
-
+list =[1,7,3,18,37,11,41,67]
+value = compare_list(list)
+print("biggest value is: ",value)
 
 
 
 
-'''
-Write a function to find the minimum value of a list
-function name: find_min
-
-'''
 
 
 
 
-'''
-Write the code to find the maximum value of a list
-function name: find_max
-''' 
 
 
 
-
-x = -10
-base = 2
-exponent =3
-list_num = [1,2,3,4,5,6,7]
-
-'''
-power_value = power(base, exponent)
-min_value = find_min(list)
-max_value = find_max(list)
-
-
-print(base,"to the power ", exponent, "is", power_value)
-print("The minimal value in ",list_num,"is", min_value)
-print("The maximal value in ",list_num,"is", max_value)
-
-'''
 
