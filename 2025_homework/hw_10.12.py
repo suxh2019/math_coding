@@ -41,6 +41,6 @@ def filter(list,small,big):
 
 #Call the function
 list = [-50, 9, 10, 50,15,25,30,35,40,60,70,100,170,2011,300,110 ]
-value = filter(list,50,200)
+values_survived = filter(list,50,200)
 
 
