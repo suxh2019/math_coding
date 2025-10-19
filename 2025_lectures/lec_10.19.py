@@ -16,11 +16,11 @@ print()
 
 
 # No duplicates in the list
-movies = ["harry", "Hermione ", "Albus", "Sirius", "Snape"]
+movies = [ "Hermione ","harry", "Albus", "Sirius", "Snape","harry"]
 for i in movies:
     if i == "harry":
         print("harry is found")
-        break
+        break # exit from the for loop
     else:
         print("harry is not found")   
 
@@ -32,20 +32,18 @@ print()
 #This function takes a list lst as an argument/parameter and 
 #returns the number of times the integer 10 appears in it. 
 
-def count_10(mylist):
+def count_10(mylist,num):
+    count = 0 
+    for value in mylist:
+        if value == num:
+            count = count + 1
     
-    
-    
-    
-    
-    # 0 needs to be replaced by a 
-    # variable that represents the times of 10 occurs in the list
-    return 0
+    return count
 
 
 # Duplicates in the list
 mylist = [1,10,2,10,5,6,10,7,11]
-count = count_10(mylist)
+count = count_10(mylist,10)
 print("How many 10 in the list? ", count)
  
 
