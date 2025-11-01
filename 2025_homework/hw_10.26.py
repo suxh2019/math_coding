@@ -19,7 +19,7 @@ def count_duplicated_name(grades,name):
    
     # Use count to keep track of the number of students whose names are name
    count = 0
-    
+   
   
                
                
