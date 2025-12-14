@@ -35,9 +35,11 @@ while count <= 3:
     print("Count is ", count)
     count += 1   
 
+
 print()
 print("--------------")
-# print number 1,3,5,7,9
+# print number 3,5,7,9,11
+
 i = 1
 while i < 10:
     i = i + 2
