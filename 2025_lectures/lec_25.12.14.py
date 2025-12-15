@@ -83,9 +83,9 @@ print("------------sorting numbers--------------------------")
 
 # 2) compare the number the second person holds with the number the third person holds
 #              if the number the second person holds > the number the third person holds
-#                     swap the second person and the third person\
+#                     swap the second person and the third person
     
-# 3) repeat the above process, and compare the number the second-to-last person holds
+# 3) repeat the above process .... compare the number the second-to-last person holds
 #                   with the number the last person holds
 
 # 4) Repeat step 1) - 3) five times (the number of students)
