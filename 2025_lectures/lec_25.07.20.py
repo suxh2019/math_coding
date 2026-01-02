@@ -38,7 +38,7 @@ name = "chacha"
       (6) The code block must be indented
 
   4. Example:
-      foods = [candy, ice_cream,noodle]
+      foods = ["candy", "ice_cream","noodle"]
       for food in foods:
           print(food)
      
