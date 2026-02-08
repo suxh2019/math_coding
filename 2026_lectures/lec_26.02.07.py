@@ -14,46 +14,51 @@ Created on Sat Feb  7 15:45:16 2026
 
 '''
 
-# x = 10
-# y = 20
+x = 10
+y = 20
 
-# print("The value of x is ", x)
-# print("The value of y is ", y)
+print("-----before swapping----")
+print("The value of x is ", x)
+print("The value of y is ", y)
+print()
 
-# print("-----after swapping----")
-# # temp is the temporary variable
-# temp = x
-# x = y
-# y = temp
-# print("The value of x is ", x)
-# print("The value of y is ", y)
+print("-----after swapping----")
+# temp is the temporary variable
+temp = x
+x = y
+y = temp
+print("The value of x is ", x)
+print("The value of y is ", y)
 
-# print()
-# print("---------swap two varaibles without temporary variables")
+print()
+print("---------swap two varaibles without temporary variables")
+print()
 
-# # Swap two variables without temporary variable
-# '''
-# Tuple Unpacking.No need to understand the concept now. 
-# Remember the result, for example, x,y = y,x 
-# '''
+# Swap two variables without temporary variable
+'''
+Tuple Unpacking.No need to understand the concept now. 
+Remember the result, for example, x,y = y,x 
+'''
 
-# x = 10
-# y = 20
+x = 10
+y = 20
 
-# print("The value of x is ", x)
-# print("The value of y is ", y)
+print("The value of x is ", x)
+print("The value of y is ", y)
 
-# print("-----after swapping----")
+print()
+print("-----after swapping----")
+print()
 
-# x, y = y, x
+x, y = y, x
 
-# print("Now, the value of x is ", x)
-# print("Now, the value of y is ", y)
+print("Now, the value of x is ", x)
+print("Now, the value of y is ", y)
 
 
 
 print()
-print("-----bubble sort----")
+print("-----sorting----")
 
 def bubble_sort(arr):
     # arr is [5,4,1,3]
