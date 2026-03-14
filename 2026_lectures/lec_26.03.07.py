@@ -16,6 +16,12 @@ print()
 numbers = [-4,6,10,66,-15,99,30,50,100,20, 30,-10,8]
 
 #Write your code below
+count = 0
+for i in numbers:
+    if -5 < i < 100:
+        count = count + 1
+
+print("There are ", count, " numbers that are greater than -5 and less than 100.")
 
 
 
@@ -24,10 +30,13 @@ print()
 print("-------Question 2-------")
 print()
 # Given a list of grades, write code to compute the average grade
-# In this case, the average grade is  84. 
+# In this case, the average grade is 71.428. 
 grades = [80,70,75,95,100,50,30]
 
 #Write your code below
+
+average_grade = sum(grades)/len(grades)
+print("The average grade is ", average_grade)
 
 
 
@@ -39,11 +48,10 @@ print()
 # write a function to compute num1 * num2 + num3 and return the result
 def mul_add(num1,num2,num3):
     
+    result = num1 * num2 + num3
     
     
-    
-    
-    return 0
+    return result
 
 #------------keep the test code unchanged------------
 a = 5
@@ -66,20 +74,18 @@ print()
 
 def find_third_highest_value(list):
     
+    max_value = max(list)
+    third_highest_value = max_value - 20
     
-    
-    
-    
-    
-    return 0
+    return third_highest_value
 
 #------------keep the test code unchanged------------
 list_one = [10, 20, 30,40,50]
 second_highest_value =  find_third_highest_value(list_one)
-print("The second highest value in the first list is ", second_highest_value )
+print("The third highest value in the first list is ", second_highest_value )
 list_two = [120, 110, 100,90,80,70,60,50]
 second_highest_value =  find_third_highest_value(list_two)
-print("The second highest value in the second list is ", second_highest_value )
+print("The third highest value in the second list is ", second_highest_value )
 #------------keep the test code unchanged------------
 
 
@@ -106,6 +112,7 @@ index = 0
 for i in range(0,n):
     if mylist[i] > max_value:
         max_value = mylist[i]
+        index = i
         
         
         
@@ -127,6 +134,10 @@ print()
 # the maximum value is the list
 
 mylist = [10,15,3,1,0,20,16]
+
+# The original list is   [10, 15, 3, 1, 0, 20, 16]  
+print("The original list is  ", mylist) 
+
 n = len(mylist)
 max_value = -1
 index = 0
@@ -134,14 +145,11 @@ index = 0
 for i in range(0,n):
     if mylist[i] > max_value:
         max_value = mylist[i]
-        
-        
+        index = i
+             
 # write the code below to swap the first value with the maximum value
+mylist[0], mylist[index] = mylist[index], mylist[0]
 
-
-
-# The original list is   [10, 15, 3, 1, 0, 20, 16]  
-print("The original list is  ", mylist) 
 
 # The new list is  [20, 15, 3, 1, 0, 10, 16]
 print("The new list is  ", mylist)
@@ -158,11 +166,11 @@ print()
 
 def five_little_numbers(mylist):
     # hint: use for loop and range 
-    
-    
+    for i in range(0,5):
+        print(mylist[i])
     
    # keep the return below unchanged
-   return
+    return
 
 
 test_list = [1,3,4,5,6,7,8,9,10,24,35,44,55,66,77,88,99]
@@ -179,11 +187,10 @@ print()
 
 def five_large_numbers(mylist):
     # hint: use for loop and range, read numbers for the end of the list
-    
-    
-    
+    for i in range(1,6):
+        print(mylist[-i])
    # keep the return below unchanged
-   return
+    return
 
 
 test_list = [1,3,4,5,6,7,8,9,10,24,35,44,55,66,77,88,99]
