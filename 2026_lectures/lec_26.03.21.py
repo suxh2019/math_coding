@@ -73,13 +73,6 @@ The final arr =  [11,12,22,64]
 '''
 
 
-
-
-
-
-
-
-
 # Play games to understand self-calling + base
 
 # Game 1:
