@@ -20,7 +20,7 @@ mylist = [9,4,1,3,2,0]
 print()
 print("----Basic -------bubble sort ------")
 def basic_bubble_sort(arr):
-    # arr is [5,4,1,3]
+    # arr is  [9,4,1,3,2,0]
     n = len(arr)
     
     # i is the number Ms. Su holds
