@@ -96,6 +96,22 @@ def stars(n):
 stars(5)
 
 
+"""
+| Daily-life Example           | Recursion or Loop? | Why?                             |
+| ---------------------------- | -----------------: | -------------------------------- |
+| Russian dolls / nested boxes |      **Recursion** | Same action on a smaller thing   |
+| Climbing down stairs         |      **Recursion** | Fewer stairs left each time      |
+| Brushing teeth every day     |           **Loop** | Repeats over time                |
+| Folders inside folders       |      **Recursion** | Search inside smaller folders    |
+| Running laps on a track      |           **Loop** | Same circle repeats              |
+| Countdown to launch          |      **Recursion** | Number gets smaller until 0      |
+| Eating pancakes in a stack   |      **Recursion** | Smaller stack each time          |
+| Seasons every year           |           **Loop** | Repeating cycle                  |
+| Family tree                  |      **Recursion** | Same question on each generation |
+| Washing dishes one by one    |      **Recursion** | Fewer dishes left each time      |
+
+
+"""
 
 
 
