@@ -45,17 +45,22 @@ Understand how the recursion program works
 
 """
 
+# Recursion program analysis  -- 1
+
+#The execution flow is shown in lec_26.04.11.pdf
+
+
 print()
 print("-------Counting Down with Recursion-------------")
 
 def countdown(n):
-    if n == 0:
+    if n == 1:
         print("Base case, stop!")
     else:
         print(n)
         countdown(n - 1)  # function calls itself
 
-countdown(4)
+countdown(5)
 
 
 print()
@@ -69,49 +74,10 @@ def countdown(n):
         countdown(n - 1)  # function calls itself
         print(n)
 
-countdown(4)
+countdown(5)
 
 
-print()
-print("-------Factorial (Multiplying Numbers in a Fun Way) -------------")
-#Factorial of 5 = 5 × 4 × 3 × 2 × 1
 
-def factorial(n):
-    if n == 1:
-        return 1
-    else:
-        return n * factorial(n - 1)
-
-print("The factorial result is ", factorial(4)) 
-
-
-print()
-print("------Drawing Stars with Recursion--------------")
-def stars(n):
-    if n == 0:
-        return
-    print("*" * n)
-    stars(n - 1)
-
-stars(5)
-
-
-"""
-| Daily-life Example           | Recursion or Loop? | Why?                             |
-| ---------------------------- | -----------------: | -------------------------------- |
-| Russian dolls / nested boxes |      **Recursion** | Same action on a smaller thing   |
-| Climbing down stairs         |      **Recursion** | Fewer stairs left each time      |
-| Brushing teeth every day     |           **Loop** | Repeats over time                |
-| Folders inside folders       |      **Recursion** | Search inside smaller folders    |
-| Running laps on a track      |           **Loop** | Same circle repeats              |
-| Countdown to launch          |      **Recursion** | Number gets smaller until 0      |
-| Eating pancakes in a stack   |      **Recursion** | Smaller stack each time          |
-| Seasons every year           |           **Loop** | Repeating cycle                  |
-| Family tree                  |      **Recursion** | Same question on each generation |
-| Washing dishes one by one    |      **Recursion** | Fewer dishes left each time      |
-
-
-"""
 
 
 
