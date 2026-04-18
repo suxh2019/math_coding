@@ -10,6 +10,27 @@ Created on Sat Apr 11 09:48:48 2026
 # Recursion program analysis  -- 2
 
 print()
+print("------Drawing upside-down triangle of stars with Recursion--------------")
+def stars_upside_down(n):
+    if n == 1:
+        print("*")
+    else:
+        print("*" * n)
+        stars_upside_down(n - 1)
+
+stars_upside_down(5)
+
+print()
+print("------Drawing triangle of stars with Recursion--------------")
+def stars(n):
+    if n == 1:
+        print("*")
+    else:
+        stars(n - 1)
+        print("*" * n)
+stars(5)
+
+print()
 print("-------Factorial (Multiplying Numbers in a Fun Way) -------------")
 #Factorial of 5 = 5 × 4 × 3 × 2 × 1
 
@@ -21,19 +42,13 @@ def factorial(n):
 
 print("The factorial result is ", factorial(4)) 
 
-
-print()
-print("------Drawing Stars with Recursion--------------")
-def stars(n):
-    if n == 0:
-        return
-    print("*" * n)
-    stars(n - 1)
-
-stars(5)
-
-
 """
+Difference between  loop and recursion
+
+Loop → repeats using for or while
+Recursion → a function calls itself
+
+
 | Daily-life Example           | Recursion or Loop? | Why?                             |
 | ---------------------------- | -----------------: | -------------------------------- |
 | Russian dolls / nested boxes |      **Recursion** | Same action on a smaller thing   |
