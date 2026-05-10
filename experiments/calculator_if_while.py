@@ -7,10 +7,10 @@ Created on Sun May 10 08:34:43 2026
 
 # Store usernames and passwords
 users = {
-    "claire": "1111",
-    "joseph": "2222",
-    "xinwen": "3333",
-    "jennifer": "4444"
+    "Claire": "1111",
+    "Joseph": "2222",
+    "Xinwen": "3333",
+    "Jennifer": "4444"
 }
 
 print("Welcome to Super Calculator!")
