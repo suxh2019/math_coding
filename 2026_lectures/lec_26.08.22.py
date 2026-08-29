@@ -22,13 +22,14 @@ Examples:
     3. input: s = "abab", output: False  
 '''
 def isPalindrome(s: str) -> bool:
+    left, right = 0, len(s) -1
     
-    
-    
-    return False
-
-
-
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left = left + 1
+        right = right -1
+    return True
 
 # Test cases
 print(isPalindrome("abba"))
