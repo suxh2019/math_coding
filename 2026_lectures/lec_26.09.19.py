@@ -97,6 +97,9 @@ output: 3
 def count_letter(word, target):
     count = 0
     # write your code below
+    for letter in word:
+        if letter == target:
+            count += 1
     
 
     return count
@@ -115,13 +118,15 @@ sentence = "I love Python"
 words = sentence.split()
 
 print(words) # output: ['I', 'love', 'Python']
+# Find the word that has the longest length
 
 def longest_word(sentence):
-    #words = sentence.split()
 
+    words = sentence.split()
     longest = ""
-
-    
+    for word in words:
+       if len(word) > len(longest):
+           longest = word
 
     return longest
 
