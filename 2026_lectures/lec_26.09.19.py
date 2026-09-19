@@ -51,7 +51,7 @@ print("Hi! " * 3)
 print()
 print("--Uppercase---")
 word = "python"
-print(word.upper())
+print(word.upper)
 
 #Check if a word contains a letter
 print()
@@ -104,9 +104,35 @@ def count_letter(word, target):
 
 print(count_letter("banana", "a"))
 
+print("-----------")
+print("Question 3") 
+'''
+split() looks for spaces and cuts the string 
+at each space.and Python stores those pieces 
+in a list
+'''
+sentence = "I love Python"
+words = sentence.split()
 
+print(words) # output: ['I', 'love', 'Python']
 
+def longest_word(sentence):
+    #words = sentence.split()
 
+    longest = ""
 
+    
+
+    return longest
+
+print("...test case....")
+print(longest_word("I love learning Python"))
+# learning
+
+print(longest_word("cat dog elephant"))
+# elephant
+
+print(longest_word("red blue green"))
+# green
 
   
