@@ -5,20 +5,6 @@ Created on Fri Oct 16 09:58:25 2026
 @author: xihong
 """
 
-# Permutation
-'''
-(1) A permutation is an arrangement of items 
-where order matters
-(2) Given mylist = [1, 2, 3], what are permuations?
-[1, 2, 3],[1, 3, 2],[2, 1, 3]
-[2, 3, 1],[3, 1, 2],[3, 2, 1]
-'''
-# Question 1: so for n distinct items, the 
-# number of permutations is:
-
-# write your answer down below and explain it
-
-
 print()
 print("----list operations----")
 # List operations:

@@ -5,6 +5,24 @@ Created on Fri Oct 16 09:59:22 2026
 @author: xihong
 """
 # Permutations
+'''
+(1) A permutation is an arrangement of items 
+where order matters
+(2) Given mylist = [1, 2, 3], what are permuations?
+[1, 2, 3],[1, 3, 2],[2, 1, 3]
+[2, 3, 1],[3, 1, 2],[3, 2, 1]
+'''
+# Question 1: so for n distinct items, the 
+# number of permutations is:
+
+# write your answer down below and explain it
+
+
+
+
+
+
+
 
 '''
 Given an array nums of unique integers, return all the 
