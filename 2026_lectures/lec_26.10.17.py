@@ -42,10 +42,11 @@ Given an integer array numbers and an integer target,
 def removeElement(numbers, target):
     count = 0
     result = [] 
-   
-    
-    
-     
+    for num in numbers:
+        if num == target:
+            count = count + 1
+        else:
+            result.append(num)
     return count, result
  
 # Test cases
@@ -63,7 +64,7 @@ count2, result2 = removeElement(nums2, 0)
 print("The occurence of ", target2, " is ", count2 )
 print("The new array of numbers is ", result2)
 print()
-
+ 
 '''
 A character is a single symbol, such as:'a'
 'B','7','!',' '
@@ -80,7 +81,7 @@ You are given an array of characters which
  which reverses a string.
 Example 1:
 
-Input: s = ["n","e","e","t"]
+Input: s = ["n","e","e","t"]   
 
 Output: ["t","e","e","n"]
 Example 2:
@@ -92,7 +93,8 @@ Output: ["r","a","c","e","c","a","r"]
 '''  
 def reverseString(s):
     output = []
-    
+    for i in range(len(s)-1, -1, -1):
+        output.append(s[i])
     
     return output
 print()
