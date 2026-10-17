@@ -11,6 +11,9 @@ mylist.append(10)
 print(" The new list after adding 10 is: ", mylist)
 
 # Use remove() to delete by value:.
+# mylist.remove(2) removes only the first occurrence of
+# the value 2, not all occurrences
+mylist.remove(2)
 mylist.remove(2)
 print(" The new list after removing 2 is: ", mylist)
 

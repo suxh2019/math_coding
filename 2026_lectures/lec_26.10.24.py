@@ -10,11 +10,6 @@ print("----list operations----")
 # List operations:
 nums = [1, 2, 3, 11, 22, 44]
 
-# append() adds the whole object as one element.
-nums.append(4)
-print("Append :",nums) # [1, 2, 3, 4]  
-print()
-
 # insert(index, value) adds an item at a specific position
 nums.insert(1, 10)
 print("Insert: ",nums) # [1, 10, 2, 3, 4]
