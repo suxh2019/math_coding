@@ -16,7 +16,7 @@ print("Insert: ",nums) # [1, 10, 2, 3, 4]
 
 # copy() creates a shallow copy of a list
 new_nums = nums.copy()
-print("copy: ", new_nums) # [1, 2, 3]
+print("copy: ", new_nums) # 
 print()
 
 #A shallow copy means you create a new outer 
@@ -112,10 +112,11 @@ all students who were born in a specified year.
 #output = ['Elaine','Jennifer']
 def students_by_year(students, target_year):
     output =[]
-    
-    
-    
-    
+    for student,birth in students.items():
+        year = birth[0:4]
+        if target_year ==year:
+            output.append(student)
+            
     return output
 
 print()
@@ -142,15 +143,5 @@ print("Students who were born in 2015 are:" ,res2015)
 print()
 
 
-print("----Code Explaination----")
-# Discuss the code and explain how it works
-numbers = ["B", "C"]
-new_letter = "A"
-
-for position in range(3):
-    new_list = numbers.copy()
-    new_list.insert(position, new_letter)
-
-    print("Put A at position", position, ":", new_list)
 
  

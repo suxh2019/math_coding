@@ -3,7 +3,23 @@
 Created on Fri Oct 16 09:59:22 2026
 
 @author: xihong
+
 """
+
+print("----Code Explaination----")
+# Discuss the code and explain how it works
+numbers = ["B", "C"]
+new_letter = "A"
+
+for position in range(3):
+    new_list = numbers.copy()
+    new_list.insert(position, new_letter)
+
+    print("Put A at position", position, ":", new_list)
+
+
+
+
 # Permutations
 '''
 (1) A permutation is an arrangement of items 
